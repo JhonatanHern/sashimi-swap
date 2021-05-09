@@ -1,10 +1,4 @@
-const chai = require("chai")
-const BN = require("bn.js")
-
-// Enable and inject BN dependency
-chai.use(require("chai-bn")(BN))
-
-const expect = chai.expect
+const { expect } = require("chai")
 
 const UNISWAP = "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"
 const USD_COIN = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"

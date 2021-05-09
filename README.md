@@ -15,6 +15,4 @@ This will allow hardhat to fetch data from the mainnet.
 
 ## Tests
 
-Ignore the `test` folder, we depend on a forked mainnet so quick tests are out of the table by now.
-
-The actual tests must be done by directly interacting with the contract.
+run `npx hardhat test`
