@@ -1,0 +1,253 @@
+{
+  "manifestVersion": "3.2",
+  "impls": {
+    "cdca23bf839807ed588f95418b8341a9b8369a2e48ba36ea744411ba20b432dd": {
+      "address": "0xc3e53F4d16Ae77Db1c982e75a937B9f60FE63690",
+      "txHash": "0xc4dd25662a21294d581a4701017b96286147fe27abcf919d9a050f9bfa443319",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:28"
+          },
+          {
+            "contract": "ToolV1",
+            "label": "uniswap",
+            "type": "t_contract(IUniswap)69",
+            "src": "contracts/ToolV1.sol:47"
+          },
+          {
+            "contract": "ToolV1",
+            "label": "owner",
+            "type": "t_address",
+            "src": "contracts/ToolV1.sol:48"
+          },
+          {
+            "contract": "ToolV1",
+            "label": "weth",
+            "type": "t_address",
+            "src": "contracts/ToolV1.sol:49"
+          }
+        ],
+        "types": {
+          "t_contract(IUniswap)69": {
+            "label": "contract IUniswap"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "7350498e66c059714f980f8bfd889d59928c65bbdcfb3e079b509e0a41be19e2": {
+      "address": "0x851356ae760d987E095750cCeb3bC6014560891C",
+      "txHash": "0x78e7133fd5aaa4f4637e48f903d25791077693dafa8321601314d4ac7e761b51",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:28"
+          },
+          {
+            "contract": "ToolV2",
+            "label": "uniswap",
+            "type": "t_contract(IUniswap)271",
+            "src": "contracts/ToolV2.sol:47"
+          },
+          {
+            "contract": "ToolV2",
+            "label": "owner",
+            "type": "t_address",
+            "src": "contracts/ToolV2.sol:48"
+          },
+          {
+            "contract": "ToolV2",
+            "label": "weth",
+            "type": "t_address",
+            "src": "contracts/ToolV2.sol:49"
+          }
+        ],
+        "types": {
+          "t_contract(IUniswap)271": {
+            "label": "contract IUniswap"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "1e44d026b97081ca0674007ac1a5eed62db40d5445d08d647db8df442980489b": {
+      "address": "0x09635F643e140090A9A8Dcd712eD6285858ceBef",
+      "txHash": "0x9ea0769b2cf5c42079e3747737cf033a573693dcf8cbe3299feba51477b3304d",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:28"
+          },
+          {
+            "contract": "ToolV1",
+            "label": "uniswap",
+            "type": "t_contract(IUniswap)703",
+            "src": "contracts/ToolV1.sol:18"
+          },
+          {
+            "contract": "ToolV1",
+            "label": "owner",
+            "type": "t_address",
+            "src": "contracts/ToolV1.sol:19"
+          },
+          {
+            "contract": "ToolV1",
+            "label": "weth",
+            "type": "t_address",
+            "src": "contracts/ToolV1.sol:20"
+          }
+        ],
+        "types": {
+          "t_contract(IUniswap)703": {
+            "label": "contract IUniswap"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  },
+  "proxies": [
+    {
+      "address": "0x1613beB3B2C4f22Ee086B2b38C1476A3cE7f78E8",
+      "kind": "transparent",
+      "txHash": "0x5907a68b53e6bb377d547382e26d5ef29c5a829e3e762bee637c7b0cfd99c2b5"
+    },
+    {
+      "address": "0x4826533B4897376654Bb4d4AD88B7faFD0C98528",
+      "kind": "transparent",
+      "txHash": "0x5708b3df39bc5eeabb31986f20d1778c8770f462edfaf942bef916c3e403b26d"
+    },
+    {
+      "address": "0x99bbA657f2BbC93c02D617f8bA121cB8Fc104Acf",
+      "kind": "transparent",
+      "txHash": "0x390ee9d045a4d2e0677c110f32425409ce2d0f9a594ce4d9150fb3aff22c2e0e"
+    },
+    {
+      "address": "0x0E801D84Fa97b50751Dbf25036d067dCf18858bF",
+      "kind": "transparent",
+      "txHash": "0x07bcaaad375f14dc1e197111106b6a11fe3e2a105db724bc9a48b6b337aa3e9c"
+    },
+    {
+      "address": "0x8f86403A4DE0BB5791fa46B8e795C547942fE4Cf",
+      "kind": "transparent",
+      "txHash": "0x4a3a832b0e5bec6bcdf604c3da1ecf1581a6277dfedbb1158a25b1ffcffcd8e6"
+    },
+    {
+      "address": "0x9d4454B023096f34B160D6B654540c56A1F81688",
+      "kind": "transparent",
+      "txHash": "0x56d0bf17c02ba9d2f688f0eb0aa37e40ef89e183f42c174f6a8fea06ad0c4528"
+    },
+    {
+      "address": "0x5eb3Bc0a489C5A8288765d2336659EbCA68FCd00",
+      "kind": "transparent",
+      "txHash": "0xf14731bf0fcedfa83ef87b0c8bd7dd23383a8463bb5fdcfb0daa93b2125c3598"
+    },
+    {
+      "address": "0x36C02dA8a0983159322a80FFE9F24b1acfF8B570",
+      "kind": "transparent",
+      "txHash": "0x1de81aa1ceb07427938d5848f2c5aa53726d44aa1aac1ed57d24255c2acccb16"
+    },
+    {
+      "address": "0x809d550fca64d94Bd9F66E60752A544199cfAC3D",
+      "kind": "transparent",
+      "txHash": "0x771e4e9434e46c7b13b7fb0362bc10659bc1e64b81a48fb9659f89d0e8335afc"
+    },
+    {
+      "address": "0x1291Be112d480055DaFd8a610b7d1e203891C274",
+      "kind": "transparent",
+      "txHash": "0x10586eb29e3c529190811072863800e0c3fb178952464b337a25550cb113ed2f"
+    },
+    {
+      "address": "0x5f3f1dBD7B74C6B46e8c44f98792A1dAf8d69154",
+      "kind": "transparent",
+      "txHash": "0x24b208f4f42e7cf3b897cc5fc972cc080a042740d49bfcc22881d839b3cb7f82"
+    },
+    {
+      "address": "0x9E545E3C0baAB3E08CdfD552C960A1050f373042",
+      "kind": "transparent",
+      "txHash": "0xba827539674a08101e4539717563ed5686d5a6f44c5f26c641809f9e1a26ba8d"
+    },
+    {
+      "address": "0xa82fF9aFd8f496c3d6ac40E2a0F282E47488CFc9",
+      "kind": "transparent",
+      "txHash": "0xfaeefe0f1a12cbc04467ed090ee260136d6adfc68a3fc4b26bcaefd0be812e20"
+    },
+    {
+      "address": "0x851356ae760d987E095750cCeb3bC6014560891C",
+      "kind": "transparent",
+      "txHash": "0x53d05b7e3f8f2c0c43f5f9fee68977a45e910c2ed2d3afbb1bb8d704c2429716"
+    },
+    {
+      "address": "0x95401dc811bb5740090279Ba06cfA8fcF6113778",
+      "kind": "transparent",
+      "txHash": "0x22b254266d0cf9dea15d37c53ac0d2786e71edb81d04d81e88b62a9669ea0133"
+    },
+    {
+      "address": "0x70e0bA845a1A0F2DA3359C97E0285013525FFC49",
+      "kind": "transparent",
+      "txHash": "0x38a481ff8ac3498d1917e76690aabfc0d852f87a1581dc127ebf1d1041a5e96c"
+    },
+    {
+      "address": "0xE6E340D132b5f46d1e472DebcD681B2aBc16e57E",
+      "kind": "transparent",
+      "txHash": "0x9cd58ca599eb875aa065baaff1fc34ced893f84e20463f9583238c91fcff2cae"
+    },
+    {
+      "address": "0x84eA74d481Ee0A5332c457a4d796187F6Ba67fEB",
+      "kind": "transparent",
+      "txHash": "0x2a50d0b54cc1e2a39bfba35ff890d3e7fcf24ffe5e6aba6c3c5d6ba374d6347c"
+    },
+    {
+      "address": "0x67d269191c92Caf3cD7723F116c85e6E9bf55933",
+      "kind": "transparent",
+      "txHash": "0x6837c3a03d8259939d3f48fec88735ef642de36a360fcbd09e1046e36655b49a"
+    }
+  ],
+  "admin": {
+    "address": "0xc5a5C42992dECbae36851359345FE25997F5C42d",
+    "txHash": "0x19df747a794e3c9934a1b211c78ce4cd190755a3b074e36ac4bafc541a587224"
+  }
+}

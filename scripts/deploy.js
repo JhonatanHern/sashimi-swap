@@ -1,4 +1,4 @@
-const { ethers } = require("hardhat")
+const { ethers, upgrades } = require("hardhat")
 
 const mainnetContracts = {
   // weth: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
@@ -8,9 +8,16 @@ const mainnetContracts = {
 
 async function main() {
   const ToolV1 = await ethers.getContractFactory("ToolV1")
-  const toolV1 = await ToolV1.deploy(mainnetContracts.router2)
+  const ToolV2 = await ethers.getContractFactory("ToolV2")
+  const instance = await upgrades.deployProxy(ToolV1, [mainnetContracts.router2])
 
-  console.log("token address:", toolV1.address)
+  console.log("Instance address:", instance.address)
+
+  console.log(await instance.sayHi())
+
+  const upgraded = await upgrades.upgradeProxy(instance.address, ToolV2)
+
+  console.log(await instance.sayHi())
 }
 
 main()

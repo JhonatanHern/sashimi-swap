@@ -14,9 +14,9 @@ interface IUniswap {
     function WETH() external pure returns (address);
 }
 
-contract ToolV1 is Initializable {
+contract ToolV2 is Initializable {
     IUniswap uniswap; // router02
-    address public owner;
+    address owner;
     address weth;
 
     struct TokenSwapRequest {
@@ -24,11 +24,7 @@ contract ToolV1 is Initializable {
         address tokenAddress;
     }
 
-    function initialize(address _uniswap) public initializer {
-        uniswap = IUniswap(_uniswap);
-        weth = IUniswap(_uniswap).WETH();
-        owner = msg.sender;
-    }
+    function initialize(address _uniswap) public initializer {}
 
     // https://uniswap.org/docs/v2/smart-contracts/router02/#swapexactethfortokens
     function swapETHForToken(address token, uint256 value) private {
@@ -59,6 +55,6 @@ contract ToolV1 is Initializable {
     }
 
     function sayHi() public pure returns (string memory) {
-        return "Hello V1";
+        return "Hello V2";
     }
 }
