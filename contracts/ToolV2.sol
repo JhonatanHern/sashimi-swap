@@ -22,21 +22,31 @@ contract ToolV2 is Initializable {
     struct TokenSwapRequest {
         uint256 percentage;
         address tokenAddress;
+        uint256 dexID; // 0 for uniswap, 1 for balancer. Not doing string comparison because expensive
     }
 
     function initialize(address _uniswap) public initializer {}
 
     // https://uniswap.org/docs/v2/smart-contracts/router02/#swapexactethfortokens
-    function swapETHForToken(address token, uint256 value) private {
+    function swapETHForToken(
+        address token,
+        uint256 value,
+        uint256 dex
+    ) private {
         address[] memory path = new address[](2);
         path[0] = weth;
         path[1] = token;
-        uniswap.swapExactETHForTokens{value: value}(
-            1,
-            path,
-            msg.sender,
-            block.timestamp + 1 hours
-        );
+        if (dex == 0) {
+            // zero => uniswap
+            uniswap.swapExactETHForTokens{value: value}(
+                1,
+                path,
+                msg.sender,
+                block.timestamp + 1 hours
+            );
+        } else {
+            // dex == 1 // balancer
+        }
     }
 
     function swapETHForTokens(TokenSwapRequest[] calldata request)
@@ -48,7 +58,8 @@ contract ToolV2 is Initializable {
         for (uint8 i = 0; i < request.length; i++) {
             swapETHForToken(
                 request[i].tokenAddress,
-                (request[i].percentage * amountToSpend) / 100
+                (request[i].percentage * amountToSpend) / 100,
+                request[i].dexID
             );
         }
         payable(owner).transfer(address(this).balance);

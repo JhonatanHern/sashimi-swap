@@ -35,6 +35,7 @@ describe("Token contract", () => {
         }
       )
       const newDollaBalance = await dollaCoin.balanceOf(owner.address)
+      // check that our USDCoin balance changed
       expect(newDollaBalance).to.not.equal(0)
     })
   })

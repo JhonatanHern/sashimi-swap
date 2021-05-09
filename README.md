@@ -1,3 +1,11 @@
+# Hi!
+
+V1 is finished. You can see it in action by installing, compiling and executing:
+
+`npx hardhat run scripts/tradeV1.js`
+
+V2 is in the works.
+
 ## Test with a forked mainnet.
 
 Deploy a forked mainnet from hardhat using:
