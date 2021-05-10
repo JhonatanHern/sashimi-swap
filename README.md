@@ -13,3 +13,7 @@ This examines the best swap option off-chain and then sends the requests. My scr
 ## Tests
 
 run `npx hardhat test`
+
+V2 isn't tested via unit tests yet. Test it (roughly) with:
+
+`npx hardhat run scripts/tradeV2.js`
