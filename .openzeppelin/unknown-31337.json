@@ -147,6 +147,64 @@
           }
         }
       }
+    },
+    "e69e1d5e76c53475f9e87fb17349370e535c509d211ad52c49e9eaf66e145fa1": {
+      "address": "0x84eA74d481Ee0A5332c457a4d796187F6Ba67fEB",
+      "txHash": "0x01f21cd2398524bcc406cd5d22ec91daf345c2378c688950b6262a6441fc7767",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:28"
+          },
+          {
+            "contract": "ToolV2",
+            "label": "uniswap",
+            "type": "t_contract(IUniswap)949",
+            "src": "contracts/ToolV2.sol:9"
+          },
+          {
+            "contract": "ToolV2",
+            "label": "owner",
+            "type": "t_address",
+            "src": "contracts/ToolV2.sol:10"
+          },
+          {
+            "contract": "ToolV2",
+            "label": "weth",
+            "type": "t_address",
+            "src": "contracts/ToolV2.sol:11"
+          },
+          {
+            "contract": "ToolV2",
+            "label": "registry",
+            "type": "t_contract(Registry)962",
+            "src": "contracts/ToolV2.sol:12"
+          }
+        ],
+        "types": {
+          "t_contract(IUniswap)949": {
+            "label": "contract IUniswap"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_contract(Registry)962": {
+            "label": "contract Registry"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
     }
   },
   "proxies": [
