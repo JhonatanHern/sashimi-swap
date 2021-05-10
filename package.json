@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "v1": "npx hardhat run scripts/tradeV1.js",
+    "v2": "npx hardhat run scripts/tradeV2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -26,6 +26,7 @@ const calculateBestDEX = async (toTokenAddress) => {
     protocols: "UNISWAP_V2,BALANCER",
   })
   let result = await axios.get("https://api.1inch.exchange/v3.0/1/quote" + params)
+  console.log("DEX obtained")
   return DEXNameToID[result.data.protocols[0][0][0].name]
 }
 
